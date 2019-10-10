@@ -59,7 +59,53 @@ class _HomePageState extends State<HomePage> {
                   fontSize: 15,
                   fontStyle: FontStyle.italic
 
-                ),)
+                ),),
+                SizedBox(height: 25,),
+
+                Container(
+                 
+                  height: 40,
+                  width: 100,
+                  child: Material(
+                    borderRadius: BorderRadius.circular(20),
+                    shadowColor: Colors.greenAccent,
+                    color: Colors.green.shade700,
+                    elevation: 7.0,
+                    child: GestureDetector(
+                      onTap: (){
+                        
+                      },
+                      child: Center(
+                        child: Text("Edit name",
+                        style:TextStyle(color: Colors.white,fontFamily:'MonteSerrat',fontSize: 18)),
+                      ),
+                    ),
+                  ),
+                ),
+                           SizedBox(height: 25,),
+
+                Container(
+                 
+                  height: 40,
+                  width: 100,
+                  child: Material(
+                    borderRadius: BorderRadius.circular(20),
+                    shadowColor: Colors.redAccent,
+                    color: Colors.red,
+                    elevation: 7.0,
+                    child: GestureDetector(
+                      onTap: (){
+                        
+                      },
+                      child: Center(
+                        child: Text("Log out",
+                        style:TextStyle(color: Colors.white,fontFamily:'MonteSerrat',fontSize: 18)),
+                      ),
+                    ),
+                  ),
+                )
+
+
 
               ],
             ),
